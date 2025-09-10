@@ -244,11 +244,11 @@ const Home = () => {
                       alt={pkg.name}
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                     />
-                    <div className="absolute top-4 left-4">
+                    {/* <div className="absolute top-4 left-4">
                       <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                         ₹{pkg.price.toLocaleString()}
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="p-6">
                     <h4 className="text-xl font-bold text-gray-800 mb-2">{pkg.name}</h4>
