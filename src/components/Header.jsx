@@ -48,13 +48,13 @@ const Header = () => {
                   to="/packages/member"
                   className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors rounded-t-lg"
                 >
-                  Member Packages
+                  Monthly Draw Packages
                 </Link>
                 <Link
                   to="/packages/non-member"
                   className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors rounded-b-lg"
                 >
-                  Non-Member Packages
+                  For Other Member Packages
                 </Link>
               </div>
             </div>

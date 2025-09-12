@@ -7,9 +7,9 @@ const MemberPackages = () => {
   return (
     <>
       <Helmet>
-        <title>Member Packages | Harsha Lucky Tours | Lucky Draw Travel Packages</title>
+        <title>Monthly Draw Packages | Harsha Lucky Tours | Lucky Draw Travel Packages</title>
         <meta name="description" content="Explore our exclusive member travel packages. Pay monthly installments and win amazing trips through lucky draws. Destinations across India and abroad." />
-        <meta name="keywords" content="member packages, lucky draw travel, monthly installment tours, Bangalore travel packages, Karnataka tours" />
+        <meta name="keywords" content="monthly draw packages, lucky draw travel, monthly installment tours, Bangalore travel packages, Karnataka tours" />
       </Helmet>
 
       <div className="py-20 bg-gray-50 min-h-screen">
@@ -17,7 +17,7 @@ const MemberPackages = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
-              Member Travel Packages
+              Monthly Draw Packages
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Join our exclusive membership program and participate in monthly lucky draws. 
@@ -37,7 +37,7 @@ const MemberPackages = () => {
 
           {/* Packages Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {memberPackages.map((pkg) => (
+            {memberPackages.map((pkg, index) => (
               <div key={pkg.packageId} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
                 {/* Image Section */}
                 <div className="relative h-64 overflow-hidden">
@@ -49,7 +49,7 @@ const MemberPackages = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute top-4 left-4">
                     <span className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                      Member Only
+                     {index+1} Draw
                     </span>
                   </div>
                   <div className="absolute bottom-4 left-4 right-4">
@@ -67,13 +67,13 @@ const MemberPackages = () => {
 
                   {/* Package Details */}
                   <div className="space-y-4 mb-6">
-                    <div className="flex items-center justify-between">
+                    {/* <div className="flex items-center justify-between">
                       <div className="flex items-center text-gray-600">
                         <Calendar className="h-5 w-5 mr-2" />
                         <span className="font-medium">Duration</span>
                       </div>
                       <span className="font-semibold text-gray-800">{pkg.duration}</span>
-                    </div>
+                    </div> */}
 
                     <div className="flex items-center justify-between">
                       <div className="flex items-center text-gray-600">

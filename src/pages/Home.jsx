@@ -76,7 +76,7 @@ const Home = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">1. Register</h3>
               <p className="text-gray-600 leading-relaxed">
-                Choose your preferred travel package and register as a member. Fill out the simple registration form with your details.
+                Register for Monthly draw package. Fill out the simple registration form with your details.
               </p>
             </div>
 
@@ -130,35 +130,11 @@ const Home = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-gray-800 mb-2">500+ Members</h3>
-                <p className="text-gray-600 text-sm">Happy travelers joined our lucky draw community</p>
-              </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <div className="bg-teal-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <MapPin className="h-6 w-6 text-teal-600" />
-                </div>
-                <h3 className="font-bold text-gray-800 mb-2">50+ Destinations</h3>
-                <p className="text-gray-600 text-sm">Amazing places across India and international</p>
-              </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Gift className="h-6 w-6 text-green-600" />
-                </div>
-                <h3 className="font-bold text-gray-800 mb-2">100+ Winners</h3>
-                <p className="text-gray-600 text-sm">Lucky members won their dream vacations</p>
-              </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <div className="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Star className="h-6 w-6 text-yellow-600" />
-                </div>
-                <h3 className="font-bold text-gray-800 mb-2">4.8/5 Rating</h3>
-                <p className="text-gray-600 text-sm">Excellent customer satisfaction reviews</p>
-              </div>
+            <div className="grid grid-cols-2 gap-4 align-center">
+              <img src="https://img.freepik.com/free-photo/beautiful-young-couple-posing-sea-beach-love-tenderness_1296-915.jpg?semt=ais_hybrid&w=740&q=80" alt="harsha lucky tours" className="rounded-lg" />
+              <img src="https://unigotravel.com/wp-content/uploads/2023/04/international-tour-packages.jpg" alt="harsha lucky tours" className="rounded-lg" />
+              <img src="https://www.livehindustan.com/lh-img/uploadimage/library/2020/05/12/16_9/16_9_6/foreign_trip_1589256746.jpg" alt="harsha lucky tours" className="rounded-lg" />
+              <img src="https://cdn.tourradar.com/s3/serp/original/2398_BKrVtAjW.jpg" alt="harsha lucky tours" className="rounded-lg" />
             </div>
           </div>
         </div>
@@ -179,7 +155,7 @@ const Home = () => {
           {/* Member Packages */}
           <div className="mb-16">
             <div className="flex justify-between items-center mb-8">
-              <h3 className="text-3xl font-bold text-gray-800">Member Packages</h3>
+              <h3 className="text-3xl font-bold text-gray-800">Monthly Draw Packages</h3>
               <Link 
                 to="/packages/member" 
                 className="text-blue-600 hover:text-blue-800 font-semibold flex items-center"
@@ -189,7 +165,7 @@ const Home = () => {
               </Link>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {featuredMemberPackages.map((pkg) => (
+              {featuredMemberPackages.map((pkg, index) => (
                 <div key={pkg.packageId} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative h-48 overflow-hidden">
                     <img 
@@ -199,17 +175,17 @@ const Home = () => {
                     />
                     <div className="absolute top-4 left-4">
                       <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        Member Only
+                          {index+1} Draw
                       </span>
                     </div>
                   </div>
                   <div className="p-6">
                     <h4 className="text-xl font-bold text-gray-800 mb-2">{pkg.name}</h4>
                     <p className="text-gray-600 mb-4 text-sm">{pkg.description}</p>
-                    <div className="flex items-center justify-between mb-4">
+                    {/* <div className="flex items-center justify-between mb-4">
                       <span className="text-sm text-gray-500">{pkg.duration}</span>
                       <span className="text-sm font-semibold text-blue-600">Draw: {pkg.Month} {pkg.year}</span>
-                    </div>
+                    </div> */}
                     <div className="flex flex-wrap gap-2">
                       {pkg.inclusions.slice(0, 3).map((inclusion, index) => (
                         <span key={index} className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">
@@ -226,7 +202,7 @@ const Home = () => {
           {/* Non-Member Packages */}
           <div>
             <div className="flex justify-between items-center mb-8">
-              <h3 className="text-3xl font-bold text-gray-800">Non-Member Packages</h3>
+              <h3 className="text-3xl font-bold text-gray-800">Other Member Packages</h3>
               <Link 
                 to="/packages/non-member" 
                 className="text-blue-600 hover:text-blue-800 font-semibold flex items-center"
@@ -253,10 +229,10 @@ const Home = () => {
                   <div className="p-6">
                     <h4 className="text-xl font-bold text-gray-800 mb-2">{pkg.name}</h4>
                     <p className="text-gray-600 mb-4 text-sm">{pkg.description}</p>
-                    <div className="flex items-center justify-between mb-4">
+                    {/* <div className="flex items-center justify-between mb-4">
                       <span className="text-sm text-gray-500">{pkg.duration}</span>
                       <span className="text-sm font-semibold text-green-600">Available Now</span>
-                    </div>
+                    </div> */}
                     <div className="flex flex-wrap gap-2">
                       {pkg.inclusions.slice(0, 3).map((inclusion, index) => (
                         <span key={index} className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">

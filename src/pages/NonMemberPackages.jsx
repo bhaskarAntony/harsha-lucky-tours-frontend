@@ -17,7 +17,7 @@ const NonMemberPackages = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
-              Non-Member Travel Packages
+              Other Member  Packages
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Prefer direct booking? Choose from our carefully curated non-member packages with transparent pricing. 
@@ -53,11 +53,11 @@ const NonMemberPackages = () => {
                       {pkg.price.toLocaleString()}
                     </span>
                   </div> */}
-                  <div className="absolute top-4 right-4">
+                  {/* <div className="absolute top-4 right-4">
                     <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
                       Available Now
                     </span>
-                  </div>
+                  </div> */}
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-2xl font-bold text-white mb-1">{pkg.name}</h3>
                     <div className="flex items-center text-white/90 text-sm">
@@ -73,13 +73,13 @@ const NonMemberPackages = () => {
 
                   {/* Package Details */}
                   <div className="space-y-4 mb-6">
-                    <div className="flex items-center justify-between">
+                    {/* <div className="flex items-center justify-between">
                       <div className="flex items-center text-gray-600">
                         <Calendar className="h-5 w-5 mr-2" />
                         <span className="font-medium">Duration</span>
                       </div>
                       <span className="font-semibold text-gray-800">{pkg.duration}</span>
-                    </div>
+                    </div> */}
 
                     {/* <div className="flex items-center justify-between">
                       <div className="flex items-center text-gray-600">

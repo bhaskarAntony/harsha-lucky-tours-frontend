@@ -53,12 +53,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/packages/member" className="text-gray-300 hover:text-white transition-colors">
-                  Member Packages
+                  Monthly Draw Packages
                 </Link>
               </li>
               <li>
                 <Link to="/packages/non-member" className="text-gray-300 hover:text-white transition-colors">
-                  Non-Member Packages
+                  For Other Member Packages
                 </Link>
               </li>
               <li>
@@ -74,11 +74,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Our Services</h4>
             <ul className="space-y-3 text-gray-300">
               <li>Lucky Draw Tours</li>
-              <li>Member Packages</li>
-              <li>Non-Member Tours</li>
+              <li>Monthly Draw Packages</li>
+              <li>For Other Member Packages</li>
               <li>Group Travel</li>
               <li>Customized Packages</li>
-              <li>Travel Insurance</li>
+              {/* <li>Travel Insurance</li> */}
             </ul>
           </div>
 
@@ -96,7 +96,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
                 <a href="tel:+919876543210" className="text-gray-300 hover:text-white transition-colors">
-                  +91 90199 97133
+                  +91 81509 70207
                 </a>
               </div>
               <div className="flex items-center space-x-3">

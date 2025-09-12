@@ -173,14 +173,14 @@ const PrivacyPolicy = () => {
               If you have any questions about this privacy policy, our data practices, or want to exercise your rights, 
               please don't hesitate to contact us.
             </p>
-            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               <div className="bg-white bg-opacity-10 rounded-xl p-6">
                 <h4 className="font-bold mb-2">Email Us</h4>
                 <p className="opacity-90">Harshaluckytours4565@gmail.com</p>
               </div>
               <div className="bg-white bg-opacity-10 rounded-xl p-6">
                 <h4 className="font-bold mb-2">Call Us</h4>
-                <p className="opacity-90">+91 90199 97133</p>
+                <p className="opacity-90">+91 81509 70207</p>
               </div>
               {/* <div className="bg-white bg-opacity-10 rounded-xl p-6">
                 <h4 className="font-bold mb-2">Visit Us</h4>

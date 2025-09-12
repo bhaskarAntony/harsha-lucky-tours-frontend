@@ -123,33 +123,34 @@ const About = () => {
           </div>
 
           {/* Statistics */}
-          <div className="bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl p-12 mb-20 text-white">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Our Achievements in Numbers
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-4xl md:text-5xl font-bold mb-2">500+</div>
-                <div className="text-xl opacity-90">Happy Members</div>
-                <p className="text-sm opacity-75 mt-2">Travelers who joined our community</p>
-              </div>
-              <div>
-                <div className="text-4xl md:text-5xl font-bold mb-2">100+</div>
-                <div className="text-xl opacity-90">Lucky Winners</div>
-                <p className="text-sm opacity-75 mt-2">Members who won their dream trips</p>
-              </div>
-              <div>
-                <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
-                <div className="text-xl opacity-90">Destinations</div>
-                <p className="text-sm opacity-75 mt-2">Amazing places covered</p>
-              </div>
-              <div>
-                <div className="text-4xl md:text-5xl font-bold mb-2">4.8/5</div>
-                <div className="text-xl opacity-90">Customer Rating</div>
-                <p className="text-sm opacity-75 mt-2">Based on member feedback</p>
-              </div>
-            </div>
-          </div>
+       <div className="bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl p-12 mb-20 text-white">
+  <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+    Our Vision for the Future
+  </h2>
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+    <div>
+      <div className="text-4xl md:text-5xl font-bold mb-2">🎁</div>
+      <div className="text-xl opacity-90">Monthly Lucky Draws</div>
+      <p className="text-sm opacity-75 mt-2">Win exciting holiday packages every month</p>
+    </div>
+    <div>
+      <div className="text-4xl md:text-5xl font-bold mb-2">🌍</div>
+      <div className="text-xl opacity-90">Unique Destinations</div>
+      <p className="text-sm opacity-75 mt-2">From temples to beaches to international trips</p>
+    </div>
+    <div>
+      <div className="text-4xl md:text-5xl font-bold mb-2">🤝</div>
+      <div className="text-xl opacity-90">Member Benefits</div>
+      <p className="text-sm opacity-75 mt-2">Exclusive travel deals and discounts</p>
+    </div>
+    <div>
+      <div className="text-4xl md:text-5xl font-bold mb-2">✈️</div>
+      <div className="text-xl opacity-90">Hassle-Free Trips</div>
+      <p className="text-sm opacity-75 mt-2">Well-organized tours with everything included</p>
+    </div>
+  </div>
+</div>
+
 
           {/* Why Choose Us */}
           <div className="mb-20">
@@ -193,7 +194,7 @@ const About = () => {
           </div>
 
           {/* Customer Stories */}
-          <div className="mb-20">
+          {/* <div className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
               Customer Stories
             </h2>
@@ -236,7 +237,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Call to Action */}
           <div className="text-center">
@@ -253,7 +254,7 @@ const About = () => {
                   href="/packages/member"
                   className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
                 >
-                  View Member Packages
+                 View Monthly Draw Packages
                 </a>
                 <a
                   href="/contact"
